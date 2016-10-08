@@ -6,7 +6,7 @@
 /*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/28 21:17:31 by varnaud           #+#    #+#             */
-/*   Updated: 2016/09/28 21:17:34 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/07 19:10:20 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@ int		ft_strequ(char const *s1, char const *s2)
 	size_t	i;
 
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0')
+	while (1)
 	{
+		if (s1[i] == '\0' && s2[i] == '\0')
+			break ;
 		if (s1[i] != s2[i])
 			return (0);
 		i++;
