@@ -6,7 +6,7 @@
 /*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/13 18:51:13 by varnaud           #+#    #+#             */
-/*   Updated: 2016/10/14 19:17:19 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/14 20:20:30 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ char	**ft_squareplusplus(char ***src, int c, int old, int len)
 		a[i] = ft_strnew(len);
 		ft_memset(a[i], c, len);
 	}
+	if (src == NULL)
+		return (a);
 	while (i >= 0)
 	{
 		a[i] = (char*)malloc(sizeof(char) * (1 + len));
