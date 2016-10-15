@@ -6,14 +6,14 @@
 /*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/13 18:51:13 by varnaud           #+#    #+#             */
-/*   Updated: 2016/10/14 03:37:50 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/14 19:17:19 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-char	**ft_squareplusplus(char ***src, int c, size_t old, size_t len)
+char	**ft_squareplusplus(char ***src, int c, int old, int len)
 {
 	char	**a;
 	int		i;
