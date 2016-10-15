@@ -9,7 +9,20 @@ int		main(void)
 	char	**result;
 	int		len;
 	int		i;
-
+	
+	result = ft_squareplusplus(NULL, 'A', 0, 5);
+	for (i = 0; i < 5; i++)
+		printf("%s\n", result[i]);
+	printf("\n");
+	result = ft_squareplusplus(&result, '.', 5, 6);
+	for (i = 0; i < 6; i++)	
+		printf("%s\n", result[i]);
+	printf("\n");
+	result = ft_squareplusplus(&result, '.', 6, 7);
+	for (i = 0; i < 7; i++)
+		printf("%s\n", result[i]);
+	printf("\n");
+	/*
 	len = 5;
 	square = (char**)malloc((len + 1) * sizeof(char*));
 	i = 0;
@@ -33,4 +46,5 @@ int		main(void)
 	}
 	return (0);
 	printf("%ld\n", sizeof(square));
+	*/
 }

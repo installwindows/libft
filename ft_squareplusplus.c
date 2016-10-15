@@ -21,22 +21,20 @@ char	**ft_squareplusplus(char ***src, int c, int old, int len)
 	a = (char**)malloc(sizeof(char*) * (1 + len));
 	a[len] = NULL;
 	i = len;
-	while (i-- > old)
+	while (i--)
 	{
 		a[i] = ft_strnew(len);
 		ft_memset(a[i], c, len);
+		a[i][len] = '\0';
 	}
 	if (src == NULL)
 		return (a);
-	while (i >= 0)
+	while (i++ < old - 1)
 	{
-		a[i] = (char*)malloc(sizeof(char) * (1 + len));
 		ft_memcpy(a[i], (*src)[i], old);
-		a[i][len - 1] = c;
 		free((*src)[i]);
-		i--;
 	}
-	*src = a;
-	free(**src);
+	free(*src);
+	src = &a;
 	return (a);
 }
