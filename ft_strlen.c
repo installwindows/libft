@@ -6,7 +6,7 @@
 /*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/27 19:24:12 by varnaud           #+#    #+#             */
-/*   Updated: 2016/09/27 22:22:51 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/19 22:10:01 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlen(const char *s)
 {
 	const char	*p;
 
+	if (s == NULL)
+		return (0);
 	p = s;
 	while (*p)
 		p++;
