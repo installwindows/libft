@@ -6,7 +6,7 @@
 /*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2016/10/19 22:16:15 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/24 09:33:40 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,5 +92,6 @@ double				ft_pow(double x, double y);
 int					ft_atoi_base(char *s, int b);
 char				**ft_squareplusplus(char ***src, int c, int old, int len);
 char				*ft_stradd(char **dest, char *src);
+char				*ft_strnadd(char **dest, int n);
 
 #endif
