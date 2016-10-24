@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_squareplusplus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/13 18:51:13 by varnaud           #+#    #+#             */
 /*   Updated: 2016/10/14 20:20:30 by varnaud          ###   ########.fr       */

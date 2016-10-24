@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnadd.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/22 14:08:23 by varnaud           #+#    #+#             */
 /*   Updated: 2016/10/24 09:31:52 by varnaud          ###   ########.fr       */

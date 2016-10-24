@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: varnaud <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/07/25 14:46:58 by varnaud           #+#    #+#              #
 #    Updated: 2016/10/24 09:32:18 by varnaud          ###   ########.fr        #
