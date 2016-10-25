@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/28 14:43:44 by varnaud           #+#    #+#             */
-/*   Updated: 2016/09/28 15:52:06 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/25 13:24:25 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,9 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	const char	*p;
 	const char	*l;
 
 	l = little;
-	p = NULL;
 	if (*l == '\0')
 		return ((char*)big);
 	while (len--)
