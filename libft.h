@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2016/10/24 15:56:41 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/27 14:30:09 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,5 +96,7 @@ int					ft_atoi_base(char *s, int b);
 char				**ft_squareplusplus(char ***src, int c, int old, int len);
 char				*ft_stradd(char **dest, char *src);
 char				*ft_strnadd(char **dest, int n);
+void				*ft_memadd(void **dest, void *src, size_t dest_size,
+					size_t src_size);
 
 #endif
