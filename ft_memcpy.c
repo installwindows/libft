@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/27 14:29:08 by varnaud           #+#    #+#             */
-/*   Updated: 2016/09/27 14:55:47 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/10/27 15:42:28 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	d = dest;
 	s = src;
-	while (n--)
+	while (n)
+	{
 		*d++ = *s++;
+		n--;
+	}
 	return (dest);
 }
