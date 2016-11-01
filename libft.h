@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2016/10/27 14:30:09 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/11/01 16:56:30 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,5 +98,8 @@ char				*ft_stradd(char **dest, char *src);
 char				*ft_strnadd(char **dest, int n);
 void				*ft_memadd(void **dest, void *src, size_t dest_size,
 					size_t src_size);
+void				ft_putnbr_base(long long nbr, int base);
+int					ft_itoc(int c);
+void				ft_putnstr(const char *str, size_t n);
 
 #endif
