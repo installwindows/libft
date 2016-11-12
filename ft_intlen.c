@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/03 12:27:26 by varnaud           #+#    #+#             */
-/*   Updated: 2016/11/03 12:28:28 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/11/12 03:44:21 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@ int		ft_intlen(int n)
 	int		size;
 
 	size = 1;
+	if (n < 0)
+		size++;
 	while ((n /= 10))
 		size++;
 	return (size);
