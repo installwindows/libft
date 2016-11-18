@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2016/11/03 12:33:06 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/11/18 12:55:14 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,5 +102,7 @@ void				ft_putnbr_base(long long nbr, int base);
 int					ft_itoc(int c);
 void				ft_putnstr(const char *str, size_t n);
 int					ft_intlen(int n);
+int					ft_itoC(int i);
+int					ft_putNBR_base(long long nbr, int base);
 
 #endif
