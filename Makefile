@@ -72,7 +72,9 @@ SRC = 	ft_abs.c \
 		ft_itoc.c \
 		ft_putnbr_base.c \
 		ft_putnstr.c \
-		ft_intlen.c
+		ft_intlen.c \
+		ft_putNBR_base.c \
+		ft_itoC.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -c -Wall -Werror -Wextra -I.
@@ -92,7 +94,7 @@ $(NAME):
 clean:
 	$(REMOVE) $(OBJ)
 
-fclean:
+fclean: clean
 	$(REMOVE) $(OBJ) $(NAME)
 
 re: fclean all
