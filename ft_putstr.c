@@ -6,15 +6,15 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/29 20:29:32 by varnaud           #+#    #+#             */
-/*   Updated: 2016/09/29 20:57:12 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/11/19 15:03:05 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *s)
+ssize_t	ft_putstr(char const *s)
 {
-	size_t	i;
+	ssize_t	i;
 
 	i = 0;
 	while (s[i])
@@ -22,4 +22,5 @@ void	ft_putstr(char const *s)
 		ft_putchar(s[i]);
 		i++;
 	}
+	return (i);
 }
