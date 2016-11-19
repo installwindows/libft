@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2016/11/18 13:30:06 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/11/19 15:04:24 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_itoa(int n);
-void				ft_putchar(char c);
-void				ft_putstr(char const *s);
+ssize_t				ft_putchar(char c);
+ssize_t				ft_putstr(char const *s);
 void				ft_putendl(char const *s);
 void				ft_putnbr(int n);
 void				ft_putchar_fd(char c, int fd);
@@ -98,11 +98,11 @@ char				*ft_stradd(char **dest, char *src);
 char				*ft_strnadd(char **dest, int n);
 void				*ft_memadd(void **dest, void *src, size_t dest_size,
 					size_t src_size);
-void				ft_putnbr_base(long long nbr, int base);
+int					ft_putnbr_base(long long nbr, int base);
 int					ft_itoc(int c);
 void				ft_putnstr(const char *str, size_t n);
 int					ft_intlen(int n);
 int					ft_itoC(int i);
-void				ft_putNBR_base(long long nbr, int base);
+int					ft_putNBR_base(long long nbr, int base);
 
 #endif
