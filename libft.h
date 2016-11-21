@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2016/11/19 15:09:35 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/11/20 16:24:32 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ void				*ft_memadd(void **dest, void *src, size_t dest_size,
 int					ft_putnbr_base(long long nbr, int base);
 int					ft_itoc(int c);
 ssize_t				ft_putnstr(const char *str, size_t n);
-int					ft_intlen(int n);
+int					ft_numlen(int n);
 int					ft_itoC(int i);
 int					ft_putNBR_base(long long nbr, int base);
 

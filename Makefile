@@ -72,7 +72,7 @@ SRC = 	ft_abs.c \
 		ft_itoc.c \
 		ft_putnbr_base.c \
 		ft_putnstr.c \
-		ft_intlen.c \
+		ft_numlen.c \
 		ft_putNBR_base.c \
 		ft_itoC.c
 OBJ = $(SRC:.c=.o)
