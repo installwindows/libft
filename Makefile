@@ -73,8 +73,8 @@ SRC = 	ft_abs.c \
 		ft_putnbr_base.c \
 		ft_putnstr.c \
 		ft_numlen.c \
-		ft_putNBR_base.c \
-		ft_itoC.c
+		ft_putcnbr_base.c \
+		ft_itocc.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -c -Wall -Werror -Wextra -I.

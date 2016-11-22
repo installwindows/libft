@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoC.c                                          :+:      :+:    :+:   */
+/*   ft_numlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: varnaud <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/18 12:52:01 by varnaud           #+#    #+#             */
-/*   Updated: 2016/11/18 12:53:06 by varnaud          ###   ########.fr       */
+/*   Created: 2016/11/03 12:27:26 by varnaud           #+#    #+#             */
+/*   Updated: 2016/11/20 16:24:20 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_itoC(int i)
+int		ft_numlen(long long n)
 {
-	if (i >= 0 && i <= 9)
-		return (i + '0');
-	if (i >= 10 && i <= 36)
-		return (i + 'A' - 10);
-	return (i);
+	int		size;
+
+	size = 1;
+	if (n < 0)
+		size++;
+	while ((n /= 10))
+		size++;
+	return (size);
 }
