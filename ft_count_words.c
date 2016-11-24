@@ -6,11 +6,11 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/24 01:04:31 by varnaud           #+#    #+#             */
-/*   Updated: 2016/11/24 01:05:04 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/11/24 01:07:36 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		get_count_words(char const *s, char c)
+int		ft_count_words(char const *s, char c)
 {
 	size_t	i;
 	int		nb_words;

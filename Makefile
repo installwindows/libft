@@ -74,6 +74,7 @@ SRC = 	ft_abs.c \
 		ft_putnstr.c \
 		ft_numlen.c \
 		ft_putcnbr_base.c \
+		ft_count_words.c \
 		ft_itocc.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
