@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2016/11/24 01:07:23 by varnaud          ###   ########.fr       */
+/*   Updated: 2016/12/08 16:31:11 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,5 +105,6 @@ int					ft_numlen(int n);
 int					ft_itocc(int i);
 int					ft_putcnbr_base(long long nbr, int base);
 int					ft_count_words(char const *s, char c);
+int					ft_strichr(const char *s, int c);
 
 #endif
