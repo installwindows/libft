@@ -76,7 +76,9 @@ SRC = 	ft_abs.c \
 		ft_putcnbr_base.c \
 		ft_count_words.c \
 		ft_itocc.c \
-		ft_strichr.c
+		ft_strichr.c \
+		ft_snumlen.c \
+		ft_unumlen.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -c -Wall -Werror -Wextra -I.
