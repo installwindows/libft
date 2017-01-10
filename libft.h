@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/01/09 20:27:36 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/01/10 00:55:20 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,5 +109,6 @@ int					ft_strichr(const char *s, int c);
 int					ft_snumlen(long long n);
 int					ft_unumlen(unsigned long long n);
 int					ft_putnchar(char c, unsigned int n);
+int					ft_putdigit(long long nbr);
 
 #endif
