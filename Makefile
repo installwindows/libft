@@ -78,9 +78,10 @@ SRC = 	ft_abs.c \
 		ft_itocc.c \
 		ft_strichr.c \
 		ft_snumlen.c \
-		ft_unumlen.c \
+		ft_unumlen_base.c \
 		ft_putnchar.c \
-		ft_putdigit.c
+		ft_putdigit.c \
+		ft_putudigit_base.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -c -Wall -Werror -Wextra -I.
