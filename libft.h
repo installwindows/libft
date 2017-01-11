@@ -6,13 +6,15 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/01/10 18:20:49 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/01/10 22:28:37 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include <unistd.h>
+# include <wchar.h>
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
@@ -112,5 +114,6 @@ int					ft_putnchar(char c, unsigned int n);
 int					ft_putdigit(long long nbr);
 int					ft_putudigit_base(unsigned long long n, int base,
 					int (*f)(int));
+int					ft_wctomb(char *mb, wchar_t wc);
 
 #endif
