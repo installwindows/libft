@@ -1,24 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_revbits.c                                       :+:      :+:    :+:   */
+/*   ft_sort.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/27 23:11:41 by varnaud           #+#    #+#             */
-/*   Updated: 2017/02/02 17:42:29 by varnaud          ###   ########.fr       */
+/*   Created: 2017/02/01 14:10:29 by varnaud           #+#    #+#             */
+/*   Updated: 2017/02/02 17:39:46 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_revbits(unsigned int n)
-{
-	const char	map[16] = {
-							0x0, 0x8, 0x4, 0xC, 0x2, 0xA, 0x6, 0xE,
-							0x1, 0x9, 0x5, 0xD, 0x3, 0xB, 0x7, 0xF
-	};
+#include "libft.h"
 
-	return (map[n >> 28] | (map[n & 15] << 28) |
-			(map[n >> 24 & 15] << 4) | (map[n >> 4 & 15] << 24) |
-			(map[n >> 20 & 15] << 8) | (map[n >> 8 & 15] << 20) |
-			(map[n >> 16 & 15] << 12) | (map[n >> 12 & 15] << 16));
+static void	swap(char **s1, char **s2)
+{
+	char	*tmp;
+
+	tmp = *s1;
+	*s1 = *s2;
+	*s2 = tmp;
+}
+
+char		**ft_sort_words(char **words, int nbwords)
+{
+	int		i;
+	int		j;
+
+	i = 0;
+	while (i < nbwords)
+	{
+		j = i + 1;
+		while (j < nbwords)
+		{
+			if (ft_strcmp(words[i], words[j]) > 0)
+				swap(&words[i], &words[j]);
+			j++;
+		}
+		i++;
+	}
+	return (words);
 }
