@@ -85,7 +85,8 @@ SRC = 	ft_abs.c \
 		ft_wctomb.c \
 		ft_revbits.c \
 		ft_sort.c \
-		ft_dump.c
+		ft_dump.c \
+		ft_memdup.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -c -Wall -Werror -Wextra -I.

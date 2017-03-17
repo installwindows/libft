@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/02/17 00:57:26 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/03/16 19:29:00 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,5 +118,6 @@ int					ft_wctomb(char *mb, wchar_t wc);
 unsigned int		ft_revbits(unsigned int n);
 char				**ft_sort_words(char **words, int nbwords);
 void				ft_dump(const void *data, size_t size);
+void				*ft_memdup(const void *source, size_t size);
 
 #endif
