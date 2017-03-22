@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/03/21 19:23:25 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/03/21 19:39:38 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,5 +123,6 @@ int					ft_putdigiti_fd(long long nbr, int fd);
 int					ft_putudigit_base_fd(unsigned long long n, int base,
 					int (*f)(int), int fd);
 int					ft_putnchar_fd(char c, unsigned int n, int fd);
+int					ft_putnstr_fd(const char *str, size_t n, int fd);
 
 #endif
