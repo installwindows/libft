@@ -1,23 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putdigit_fd.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/29 20:36:19 by varnaud           #+#    #+#             */
-/*   Updated: 2017/03/21 19:24:16 by varnaud          ###   ########.fr       */
+/*   Created: 2017/03/21 19:03:11 by varnaud           #+#    #+#             */
+/*   Updated: 2017/03/21 19:33:21 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-int		ft_putendl_fd(char const *s, int fd)
+int		ft_putdigit_fd(long long nbr, int fd)
 {
 	int		nbprint;
 
-	nbprint = 0;
-	nbprint += ft_putstr_fd(s, fd);
-	nbprint += ft_putchar_fd('\n', fd);
+	if (nbr < 0)
+	{
+		nbprint = 1;
+		if (nbr <= -10)
+			nbprint = ft_putdigit_fd(nbr / -10, fd) + 1;
+		ft_putchar_fd(-(nbr % 10) + '0', fd);
+	}
+	else if (nbr >= 10)
+	{
+		nbprint = ft_putdigit_fd(nbr / 10, fd) + 1;
+		ft_putchar_fd(nbr % 10 + '0', fd);
+	}
+	else
+		nbprint = ft_putchar_fd(nbr + '0', fd);
 	return (nbprint);
 }

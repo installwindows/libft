@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/03/16 19:29:00 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/03/21 19:23:25 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,10 +66,10 @@ ssize_t				ft_putchar(char c);
 ssize_t				ft_putstr(char const *s);
 void				ft_putendl(char const *s);
 void				ft_putnbr(int n);
-void				ft_putchar_fd(char c, int fd);
-void				ft_putstr_fd(char const *s, int fd);
-void				ft_putendl_fd(char const *s, int fd);
-void				ft_putnbr_fd(int n, int fd);
+int					ft_putchar_fd(char c, int fd);
+int					ft_putstr_fd(char const *s, int fd);
+int					ft_putendl_fd(char const *s, int fd);
+int					ft_putnbr_fd(int n, int fd);
 
 typedef struct		s_list
 {
@@ -119,5 +119,9 @@ unsigned int		ft_revbits(unsigned int n);
 char				**ft_sort_words(char **words, int nbwords);
 void				ft_dump(const void *data, size_t size);
 void				*ft_memdup(const void *source, size_t size);
+int					ft_putdigiti_fd(long long nbr, int fd);
+int					ft_putudigit_base_fd(unsigned long long n, int base,
+					int (*f)(int), int fd);
+int					ft_putnchar_fd(char c, unsigned int n, int fd);
 
 #endif

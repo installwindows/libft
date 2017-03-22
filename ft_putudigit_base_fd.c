@@ -1,23 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putudigit_base_fd.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/09/29 20:36:19 by varnaud           #+#    #+#             */
-/*   Updated: 2017/03/21 19:24:16 by varnaud          ###   ########.fr       */
+/*   Created: 2017/03/21 18:58:07 by varnaud           #+#    #+#             */
+/*   Updated: 2017/03/21 19:33:56 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
-int		ft_putendl_fd(char const *s, int fd)
+int		ft_putudigit_base_fd(unsigned long long n, int base, int (*f)(int),
+		int fd)
 {
 	int		nbprint;
 
-	nbprint = 0;
-	nbprint += ft_putstr_fd(s, fd);
-	nbprint += ft_putchar_fd('\n', fd);
+	if (n >= (unsigned int)base)
+	{
+		nbprint = ft_putudigit_base_fd(n / base, base, f, fd) + 1;
+		ft_putchar_fd(f(n % base), fd);
+	}
+	else
+		nbprint = ft_putchar_fd(f(n), fd);
 	return (nbprint);
 }

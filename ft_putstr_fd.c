@@ -6,20 +6,23 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/29 20:34:27 by varnaud           #+#    #+#             */
-/*   Updated: 2016/09/29 20:58:02 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/03/21 19:20:29 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s, int fd)
+int		ft_putstr_fd(char const *s, int fd)
 {
 	size_t	i;
+	int		nbprint;
 
+	nbprint = 0;
 	i = 0;
 	while (s[i])
 	{
-		ft_putchar_fd(s[i], fd);
+		nbprint += ft_putchar_fd(s[i], fd);
 		i++;
 	}
+	return (nbprint);
 }
