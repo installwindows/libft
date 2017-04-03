@@ -93,24 +93,22 @@ SRC = 	ft_abs.c \
 		ft_putnstr_fd.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
-CFLAGS = -c -Wall -Werror -Wextra -I.
-ARRC = ar rc
-REMOVE = /bin/rm -f
-RANLIB = ranlib
+CFLAGS = -Wall -Werror -Wextra
 
 .PHONY: clean fclean all re
 
 all: $(NAME)
 
-$(NAME):
-	$(CC) $(CFLAGS) $(SRC)
-	$(ARRC) $(NAME) $(OBJ)
-	$(RANLIB) $(NAME)
+$(NAME): $(OBJ)
+	ar rc $(NAME) $(OBJ)
+	ranlib $(NAME)
+
+$(OBJ): libft.h
 
 clean:
-	$(REMOVE) $(OBJ)
+	-rm $(OBJ)
 
 fclean: clean
-	$(REMOVE) $(OBJ) $(NAME)
+	-rm $(NAME)
 
 re: fclean all
