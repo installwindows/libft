@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/03/21 19:44:34 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/04/03 21:54:42 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,11 @@
 # include <string.h>
 # include <unistd.h>
 # include <wchar.h>
+# include <stdarg.h>
 
+int					ft_printf(const char *format, ...);
+int					ft_fprintf(int fd, const char *format, ...);
+int					gnl(const int fd, char **line);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
