@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/16 18:11:39 by varnaud           #+#    #+#             */
-/*   Updated: 2017/04/17 20:51:36 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/04/17 21:26:19 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,7 @@ int			ft_setenv(char ***env, const char *key, const char *value)
 	else
 	{
 		newenv = ft_arrayadd(*env, newvalue);
+		free(newvalue);
 		free(*env);
 		*env = newenv;
 	}
