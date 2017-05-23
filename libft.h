@@ -139,6 +139,7 @@ char				**ft_findenv(char **env, const char *key);
 int					ft_setenv(char ***env, const char *key, const char *value);
 int					ft_unsetenv(char ***env, const char *key);
 char				**ft_split(char *line, int len, int *words);
+char				*ft_strndup(const char *s1, size_t n);
 int					ft_find_min_max(int *array, int size, int *min, int *max);
 
 #endif

@@ -109,6 +109,7 @@ FTSRC	=	ft_abs.c \
 			ft_strsubs.c \
 			ft_strcjoin.c \
 			ft_split.c \
+			ft_strndup.c \
 			ft_find_min_max.c
 PFDIR	=	ft_printf/
 PFSRC	=	ft_printf.c \
