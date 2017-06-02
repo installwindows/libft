@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/05/22 21:16:43 by varnaud          ###   ########.fr       */
+/*   Updated: 2017/06/02 05:03:37 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,5 +141,6 @@ int					ft_unsetenv(char ***env, const char *key);
 char				**ft_split(char *line, int len, int *words);
 char				*ft_strndup(const char *s1, size_t n);
 int					ft_find_min_max(int *array, int size, int *min, int *max);
+int					ft_natoi(char *s, int *n);
 
 #endif
