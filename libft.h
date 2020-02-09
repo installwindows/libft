@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2017/06/02 05:03:37 by varnaud          ###   ########.fr       */
+/*   Updated: 2020/02/09 01:09:05 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 
 int					ft_printf(const char *format, ...);
 int					ft_fprintf(int fd, const char *format, ...);
+int					ft_vfprintf(int fd, const char *format, va_list args);
 int					gnl(const int fd, char **line);
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
