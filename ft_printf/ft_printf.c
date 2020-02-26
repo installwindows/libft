@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/10/29 13:45:00 by varnaud           #+#    #+#             */
-/*   Updated: 2020/02/09 01:30:57 by varnaud          ###   ########.fr       */
+/*   Updated: 2020/02/26 23:28:21 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int			ft_printf(const char *format, ...)
 	return (r);
 }
 
-int			ft_fprintf(int fd, const char *format, ...)
+int			ft_dprintf(int fd, const char *format, ...)
 {
 	va_list		args;
 	int			r;

@@ -6,7 +6,7 @@
 /*   By: varnaud <varnaud@student.42.us.org>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/26 23:08:11 by varnaud           #+#    #+#             */
-/*   Updated: 2020/02/17 19:01:26 by varnaud          ###   ########.fr       */
+/*   Updated: 2020/02/26 23:28:47 by varnaud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # define BLANK(c) (c == ' ' || c == '\t' || c == '\v' || c == '\r' || c == '\n')
 
 int					ft_printf(const char *format, ...);
-int					ft_fprintf(int fd, const char *format, ...);
+int					ft_dprintf(int fd, const char *format, ...);
 int					ft_vdprintf(int fd, const char *format, va_list args);
 int					gnl(const int fd, char **line);
 void				*ft_memset(void *b, int c, size_t len);
